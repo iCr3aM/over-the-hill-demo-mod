@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Copy SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\plugins\" />
+  </Target>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\core\0Harmony.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\core\BepInEx.Core.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\core\BepInEx.Unity.IL2CPP.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\core\Il2CppInterop.Runtime.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\Assembly-CSharp.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\Fusion.Runtime.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\UnityEngine.CoreModule.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\UnityEngine.PhysicsModule.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\Il2Cppmscorlib.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\UnityEngine.IMGUIModule.dll" />
+    <Reference Include="E:\SteamLibrary\steamapps\common\over the hill Demo\BepInEx\interop\UnityEngine.InputLegacyModule.dll" />
+  </ItemGroup>
+</Project> 
+
